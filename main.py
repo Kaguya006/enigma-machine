@@ -26,13 +26,16 @@ if __name__ == '__main__':
         p, [r1, r2, r3], r
     )
 
+    print('INPUT TEXT >>', end='')
     s1 = input().strip()
     encrypted = enigma_machine.encrypt(s1)
-    print('#' * 10 + 'ENCRYPTED TEXT' + '#' * 10)
+    print('-----ENCRYPTED-----')
     print(encrypted)
-    print('#' * 10 + 'ENCRYPTED TEXT' + '#' * 10)
+    print('-----ENCRYPTED-----\n')
 
+    print('INPUT THE ENCRYPTED TEXT >>', end='')
     s2 = input().strip()
-    print('#' * 10 + 'DECRYPTED TEXT' + '#' * 10)
+
+    print('\n-----DECRYPTED-----')
     print(enigma_machine.decrypt(s2))
-    print('#' * 10 + 'DECRYPTED TEXT' + '#' * 10)
+    print('-----DECRYPTED-----')
